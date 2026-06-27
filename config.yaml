@@ -1,0 +1,23 @@
+# Cadencia de publicación: lista de horas (formato HH:MM, 24h) en las que el script
+# intentará publicar el siguiente vídeo de la cola, una vez al día por cada hora listada.
+horarios_publicacion:
+  - "10:00"
+  - "19:00"
+
+# Carpetas relativas a la raíz del proyecto
+carpeta_pendientes: videos_pendientes
+carpeta_publicados: videos_publicados
+
+# Extensiones de vídeo aceptadas
+extensiones_validas:
+  - .mp4
+  - .mov
+
+# Texto que se usará como descripción/caption al publicar.
+# Si hay un archivo .txt con el mismo nombre que el vídeo en videos_pendientes/,
+# se usará ese contenido en vez de esta plantilla.
+caption_por_defecto: "Así era España antes 🇪🇸 #EspanaVintage #España #Nostalgia #Historia"
+
+# Modo de publicación: "DIRECT_POST" (publica directamente) o "INBOX" (lo manda
+# al buzón de la app de TikTok para revisión manual antes de publicar)
+modo_publicacion: DIRECT_POST
